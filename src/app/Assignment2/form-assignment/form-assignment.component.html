@@ -1,0 +1,11 @@
+<input type="text" class="form-control" [(ngModel)]="username" />
+
+<p>your Username is {{ username }}</p>
+
+<button
+  [disabled]="onCheckUsername()"
+  class="btn btn-primary"
+  (click)="onReset()"
+>
+  reset
+</button>
